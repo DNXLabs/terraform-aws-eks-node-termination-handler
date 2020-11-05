@@ -9,13 +9,16 @@
 
 | Name | Version |
 |------|---------|
-| terraform | ~> 0.13.0 |
+| terraform | ~> 0.13 |
+| aws | >= 3.13, < 4.0 |
+| helm | >= 1.0, < 1.4.0 |
+| kubernetes | >= 1.10.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| helm | n/a |
+| helm | >= 1.0, < 1.4.0 |
 
 ## Inputs
 

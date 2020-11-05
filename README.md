@@ -3,6 +3,16 @@
 [![Lint Status](https://github.com/DNXLabs/terraform-aws-eks-node-termination-handler/workflows/Lint/badge.svg)](https://github.com/DNXLabs/terraform-aws-eks-node-termination-handler/actions)
 [![LICENSE](https://img.shields.io/github/license/DNXLabs/terraform-aws-eks-node-termination-handler)](https://github.com/DNXLabs/terraform-aws-eks-node-termination-handler/blob/master/LICENSE)
 
+Terraform module for deploying [node termination handler](https://github.com/aws/aws-node-termination-handler) inside a pre-existing EKS cluster.
+
+## Usage
+
+```
+module "alb_ingress" {
+  source = "git::https://github.com/DNXLabs/terraform-aws-eks-node-termination-handler.git"
+}
+```
+
 <!--- BEGIN_TF_DOCS --->
 
 ## Requirements

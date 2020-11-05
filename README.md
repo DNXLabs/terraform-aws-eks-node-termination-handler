@@ -34,12 +34,12 @@ module "alb_ingress" {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| enabled | n/a | `bool` | `true` | no |
-| helm\_chart\_name | EKS Spot termination handler Helm chart name. | `string` | `"aws-node-termination-handler"` | no |
-| helm\_chart\_release\_name | EKS Spot termination handler Helm release name. | `string` | `"aws-node-termination-handler"` | no |
-| helm\_chart\_repo | EKS Spot termination handler Helm repository name. | `string` | `"https://aws.github.io/eks-charts"` | no |
-| helm\_chart\_version | EKS Spot termination handler Helm chart version. | `string` | `"0.9.1"` | no |
-| namespace | Kubernetes namespace to deploy EKS Spot termination handler Helm chart. | `string` | `"kube-system"` | no |
+| enabled | Variable indicating whether deployment is enabled. | `bool` | `true` | no |
+| helm\_chart\_name | Spot termination handler Helm chart name. | `string` | `"aws-node-termination-handler"` | no |
+| helm\_chart\_release\_name | Spot termination handler Helm release name. | `string` | `"aws-node-termination-handler"` | no |
+| helm\_chart\_repo | Spot termination handler Helm repository name. | `string` | `"https://aws.github.io/eks-charts"` | no |
+| helm\_chart\_version | Spot termination handler Helm chart version. | `string` | `"0.9.1"` | no |
+| namespace | Kubernetes namespace to deploy Spot termination handler Helm chart. | `string` | `"kube-system"` | no |
 
 ## Outputs
 

@@ -28,8 +28,19 @@ variable "helm_chart_version" {
   description = "Spot termination handler Helm chart version."
 }
 
+variable "create_namespace" {
+  type        = bool
+  default     = true
+  description = "Whether to create Kubernetes namespace with name defined by `namespace`."
+}
+
 variable "namespace" {
   type        = string
   default     = "kube-system"
   description = "Kubernetes namespace to deploy Spot termination handler Helm chart."
+}
+
+variable "mod_dependency" {
+  default     = null
+  description = "Dependence variable binds all AWS resources allocated by this module, dependent modules reference this variable."
 }

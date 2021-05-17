@@ -21,15 +21,15 @@ module "alb_ingress" {
 |------|---------|
 | terraform | ~> 0.13 |
 | aws | >= 3.13, < 4.0 |
-| helm | >= 1.0, < 1.4.0 |
-| kubernetes | >= 1.10.0 |
+| helm | >= 1.0, < 3.0 |
+| kubernetes | >= 1.10.0, < 3.0.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| helm | >= 1.0, < 1.4.0 |
-| kubernetes | >= 1.10.0 |
+| helm | >= 1.0, < 3.0 |
+| kubernetes | >= 1.10.0, < 3.0.0 |
 
 ## Inputs
 
@@ -40,7 +40,7 @@ module "alb_ingress" {
 | helm\_chart\_name | Spot termination handler Helm chart name. | `string` | `"aws-node-termination-handler"` | no |
 | helm\_chart\_release\_name | Spot termination handler Helm release name. | `string` | `"aws-node-termination-handler"` | no |
 | helm\_chart\_repo | Spot termination handler Helm repository name. | `string` | `"https://aws.github.io/eks-charts"` | no |
-| helm\_chart\_version | Spot termination handler Helm chart version. | `string` | `"0.9.1"` | no |
+| helm\_chart\_version | Spot termination handler Helm chart version. | `string` | `"0.15.0"` | no |
 | mod\_dependency | Dependence variable binds all AWS resources allocated by this module, dependent modules reference this variable. | `any` | `null` | no |
 | namespace | Kubernetes namespace to deploy Spot termination handler Helm chart. | `string` | `"kube-system"` | no |
 

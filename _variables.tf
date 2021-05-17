@@ -24,7 +24,7 @@ variable "helm_chart_repo" {
 
 variable "helm_chart_version" {
   type        = string
-  default     = "0.9.1"
+  default     = "0.15.0"
   description = "Spot termination handler Helm chart version."
 }
 

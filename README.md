@@ -43,6 +43,7 @@ module "alb_ingress" {
 | helm\_chart\_version | Spot termination handler Helm chart version. | `string` | `"0.15.0"` | no |
 | mod\_dependency | Dependence variable binds all AWS resources allocated by this module, dependent modules reference this variable. | `any` | `null` | no |
 | namespace | Kubernetes namespace to deploy Spot termination handler Helm chart. | `string` | `"kube-system"` | no |
+| settings | Additional settings which will be passed to the Helm chart values. | `map` | `{}` | no |
 
 ## Outputs
 

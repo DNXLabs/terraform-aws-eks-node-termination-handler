@@ -20,7 +20,7 @@ module "alb_ingress" {
 | Name | Version |
 |------|---------|
 | terraform | >= 0.13 |
-| aws | >= 3.13, < 4.0 |
+| aws | >= 4.0.0, < 5.46.0 |
 | helm | >= 1.0, < 3.0 |
 | kubernetes | >= 1.10.0, < 3.0.0 |
 
